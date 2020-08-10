@@ -1,0 +1,49 @@
+@charset "utf-8"
+@import "src/Variables/colors.sass"
+
+.secondStaticBlock
+  position: relative
+  margin-bottom: 40px
+  ul
+    list-style: none
+    margin-left: 0
+    text-indent: -28px
+    li
+      list-style-type: none
+      margin-bottom: 11px
+      &:before
+        content: "🞇"
+        list-style-position: outside
+        margin-right: 12px
+        color: $light_blue
+  ol
+    counter-reset: myCounter
+    color: $light_blue
+    text-indent: -26px
+    li
+      list-style-type: none
+      color: #222222
+      &:before
+        counter-increment: myCounter
+        content: counter(myCounter) "."
+        font-family: Montserrat, sans-serif
+        margin-right: 15px
+        color: $light_blue
+
+  &-header
+    margin-bottom: 30px
+
+  &-description
+    width: 314px
+    height: 206px
+    position: absolute
+    right: 0
+    top: 0
+
+@media screen and (max-width: 600px)
+  .secondStaticBlock
+    position: relative
+    margin-bottom: 40px
+    &-description
+      position: relative
+      margin-left: 15px

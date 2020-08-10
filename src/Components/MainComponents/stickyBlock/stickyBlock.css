@@ -1,0 +1,14 @@
+.stickyBlock {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+.stickyBlock-header {
+  margin-bottom: 30px;
+}
+.stickyBlock-text {
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=stickyBlock.css.map */

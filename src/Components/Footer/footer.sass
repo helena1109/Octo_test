@@ -1,0 +1,113 @@
+@import "src/Variables/colors.sass"
+.footer
+  height: 80px
+  align-items: center
+  margin-bottom: 20px
+  margin-top: 40px
+  &-nav
+    display: inline-block
+    margin-top: 33px
+    align-items: end
+    padding: 0
+    ul
+      padding-top: 3px
+      padding-left: 0
+      margin-bottom: 0
+    &__item
+      cursor: pointer
+      margin-bottom: 0
+      display: inline-block
+      margin-right: 45px
+  &-years
+    display: inline-block
+    padding: 0
+    text-align: end
+  &-end
+    display: inline-block
+    padding-right: 0
+    margin-bottom: 35px
+  &-line
+    margin-left: 10px
+    width: 100%
+    height: 3px
+    background-color: $dark_Blue
+  button
+    background-color: white
+    border: 2px solid $light_blue
+    color: #00A4F7
+    &:hover
+      background: none
+    &:active
+      background-color: #b2ddf3
+
+@media screen and (max-width: 600px)
+  .footer
+    height: 80px
+    margin-right: 10px
+    margin-left: 10px
+    align-items: center
+    margin-bottom: 20px
+    max-width: 350px
+    &-address
+      max-width: 370px
+      &-address__street
+        margin-bottom: 25px
+    &-contacts
+      margin-top: 20px
+      max-width: 370px
+      padding: 0
+      margin-bottom: 25px
+      &-contacts__email
+        padding: 0
+      &-contacts__phone
+        padding: 0
+
+    &-nav
+      display: inline-block
+      margin-top: 33px
+      align-items: end
+      padding: 0
+      ul
+        width: 350px
+        padding-top: 3px
+        padding-left: 0
+        margin-bottom: 0
+      &__item
+        cursor: pointer
+        margin-bottom: 0
+        display: inline-block
+        margin-right: 10px
+    &-years
+      display: inline-block
+      padding-right: 20px
+      //text-align: end
+      transform: translate(0,-27px)
+    &-end
+      max-width: 370px
+      display: inline-block
+      padding-right: 0
+      margin-bottom: 0
+    &-line
+      margin-left: 20px
+      margin-right: 20px
+      width: 100%
+      height: 3px
+      background-color: $dark_Blue
+    &-button
+      width: 100%
+      margin-right: 20px
+      margin-left: 20px
+      background-color: white
+      border: 2px solid $light_blue
+      color: #00A4F7
+      text-align: center
+      &:hover
+        background: none
+      &:active
+        background-color: #b2ddf3
+  .active
+    cursor: pointer
+    margin-bottom: 0
+    display: inline-block
+    padding: 0
+

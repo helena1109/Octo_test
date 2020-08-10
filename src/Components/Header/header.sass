@@ -1,0 +1,58 @@
+@import "src/Variables/colors.sass"
+
+.header
+  display: flex
+  height: 80px
+  align-items: center
+  margin-bottom: 20px
+  box-shadow: $shadow
+  &-logo
+    padding-left: 0
+  &-nav
+    text-align: center
+    align-items: end
+    ul
+      padding-top: 3px
+      padding-left: 0
+      margin-bottom: 0
+    &__item
+      cursor: pointer
+      margin-bottom: 0
+      display: inline-block
+      margin-right: 45px
+      &:active
+        color: $dark_Blue
+      span
+        font-size: 1rem
+        margin-right: 8px
+
+
+@media screen and (max-width: 600px)
+  .header
+    height: 80px
+    align-items: center
+    margin-bottom: 0
+    box-shadow: none
+    &-logo
+      padding: 0
+      width: 90%
+      img
+        width: 243px
+        height: 30px
+    &-nav
+      display: none
+      ul
+        padding-top: 3px
+        padding-left: 0
+        margin-bottom: 0
+      &__item
+        cursor: pointer
+        margin-bottom: 0
+        margin-right: 45px
+        display: none
+        span
+          font-size: 1rem
+          margin-right: 8px
+          display: none
+
+

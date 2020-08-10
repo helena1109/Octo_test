@@ -1,0 +1,66 @@
+.thirdStaticBlock {
+  margin-bottom: 90px;
+}
+.thirdStaticBlock blockquote {
+  border-left: 4px solid #00A4F7;
+  padding: 22px 0 20px 30px;
+  margin-left: 25px;
+}
+.thirdStaticBlock blockquote p {
+  margin: 0;
+}
+.thirdStaticBlock th {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: solid 2px #00A4F7;
+  padding-bottom: 9px;
+}
+.thirdStaticBlock tr {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  width: 209px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.thirdStaticBlock tr:hover td {
+  background: #fdf7f7;
+}
+.thirdStaticBlock tr td {
+  border-bottom: 2px solid #DADADA;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.thirdStaticBlock tr td:nth-child(1) {
+  width: 210px;
+}
+.thirdStaticBlock tr td:nth-child(2) {
+  width: 60%;
+}
+.thirdStaticBlock tr td:nth-child(3) {
+  width: 210px;
+}
+
+@media screen and (max-width: 600px) {
+  .table-wrap {
+    overflow-x: scroll;
+  }
+  .table-wrap::-webkit-scrollbar {
+    background-color: white;
+    height: 3px;
+  }
+  .table-wrap table {
+    width: 700px;
+  }
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00A4F7;
+  font-size: 2px;
+}
+
+/*# sourceMappingURL=thirdStaticBlock.css.map */

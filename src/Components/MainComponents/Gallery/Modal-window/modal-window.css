@@ -1,0 +1,42 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  color: white;
+}
+.modal-window {
+  position: relative;
+  width: 60%;
+  height: auto;
+}
+.modal-window .fa {
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  color: #c7c6c6;
+  font-size: 2rem;
+}
+.modal-window .fa:hover {
+  color: #e3e2e2;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-window {
+    width: 90%;
+  }
+  .modal-window .fa {
+    top: -40px;
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=modal-window.css.map */

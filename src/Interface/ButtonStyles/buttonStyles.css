@@ -1,0 +1,70 @@
+.btn_primary {
+  width: 120px;
+  height: 50px;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  background: #00A4F7;
+  border-radius: 8px;
+  border: none;
+}
+.btn_primary:focus {
+  outline: none;
+}
+.btn_primary:hover {
+  background: #128ACE;
+}
+.btn_primary:active {
+  background-color: #089aea;
+}
+
+.btn_disabled {
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  width: 120px;
+  height: 50px;
+  background: #00A4F7;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0, 164, 247, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+}
+.btn_disabled:focus {
+  outline: none;
+}
+
+.btn_big {
+  width: 167px;
+  height: 60px;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  background: #00A4F7;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn_loading {
+  width: 210px;
+  height: 51px;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  background: #00A4F7;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn_fullWidth {
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  background: #00A4F7;
+  border-radius: 8px;
+  border: none;
+}
+
+/*# sourceMappingURL=buttonStyles.css.map */

@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import "../src/Interface/TextStyles/TextStyles.sass"
+import "../src/Interface/interface.sass";
+import "../src/Interface/ButtonStyles/buttonStyles.sass"
+import "../src/Interface/InputStyles/InputStyles.sass"
+
+import App from "./Components/App/App";
+import {BrowserRouter as Router} from "react-router-dom";
+import {Provider} from "react-redux";
+import store from "./store";
+import ErrorBoundry from "./Components/ErrorBoundry/errorBoundry";
+import {OctoTestServiceProvider} from "./Components/octoTestServiceContext/octoTestServiceContext";
+import OctoTestService from "./Services/octoTestService/octoTestService";
+
+const octoTestService = new OctoTestService();
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <Provider store={store}>
+        <ErrorBoundry>
+            <OctoTestServiceProvider value={octoTestService}>
+                <Router>
+                    <App/>
+                </Router>
+            </OctoTestServiceProvider>
+        </ErrorBoundry>
+    </Provider>,
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+document.getElementById("root"));

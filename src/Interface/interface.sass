@@ -1,0 +1,42 @@
+@import "src/Variables/colors.sass"
+
+.wrapper
+  padding-left: 60px
+  padding-right: 60px
+  position: sticky
+.far-right
+  padding-top: 2px
+  margin-left: 400px
+  font-family: Montserrat, sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 22px
+.copyBox
+    height: fit-content
+    cursor: pointer
+    padding: 5px 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $copyBox_backGround
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    border-radius: 8px
+    a
+      font-size: 15px
+      color: $regular_black
+
+@media (max-width: 600px)
+  .wrapper
+    padding: 0
+  .far-right
+    display: none
+
+
+
+
+
+

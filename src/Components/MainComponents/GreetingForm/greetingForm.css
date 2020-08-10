@@ -1,0 +1,138 @@
+@charset "UTF-8";
+.formWrapper {
+  position: relative;
+  background: #FAF9FA;
+}
+
+.greetingForm {
+  padding-left: 300px;
+  padding-right: 100px;
+}
+.greetingForm-image {
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+.greetingForm-title {
+  margin-top: 50px;
+}
+.greetingForm-text {
+  margin-top: 35px;
+}
+.greetingForm-successMessage {
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.greetingForm-successMessage i {
+  color: #00A4F7;
+  font-size: 30px;
+}
+.greetingForm-successMessage__text {
+  font-size: 12px;
+}
+.greetingForm-line {
+  margin-top: 45px;
+  width: 100%;
+  height: 1px;
+  background-color: #ADADAD;
+}
+.greetingForm button {
+  width: 250px;
+  height: 60px;
+  margin-top: 20px;
+}
+.greetingForm__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+}
+.greetingForm__wrap input {
+  margin-top: 30px;
+}
+.greetingForm__wrap input::placeholder {
+  color: #ADADAD;
+}
+.greetingForm__wrap textarea {
+  margin-top: 30px;
+}
+.greetingForm__wrap textarea:focus {
+  outline: none;
+  border: #00A4F7 2px solid;
+}
+.greetingForm__wrap textarea::placeholder {
+  color: #ADADAD;
+}
+.greetingForm__error {
+  color: #EA4F24;
+}
+.greetingForm__checkbox {
+  margin-top: 30px;
+  display: flex;
+  padding: 5px;
+  line-height: 1rem;
+}
+.greetingForm__checkbox input {
+  display: none;
+}
+.greetingForm__checkbox input:hover + label:before {
+  content: "✓";
+  color: grey;
+}
+.greetingForm__checkbox input:checked + label:before {
+  content: "✓";
+  background-color: #00A4F7;
+  border: 1px solid #00A4F7;
+}
+.greetingForm__checkbox label {
+  margin-left: 22px;
+  text-indent: -28px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+}
+.greetingForm__checkbox label:before {
+  border-radius: 5px;
+  cursor: pointer;
+  content: " ";
+  color: white;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  text-indent: 0;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 1px solid #dadada;
+  border-image: initial;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .greetingForm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .greetingForm-image {
+    position: relative;
+    top: 0;
+  }
+  .greetingForm-title {
+    margin-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .greetingForm-text {
+    margin-top: 5px;
+  }
+  .greetingForm-successMessage {
+    margin-bottom: 20px;
+  }
+  .greetingForm-button {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=greetingForm.css.map */
